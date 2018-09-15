@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="jdbc:derby://localhost:1527/myswebasicwebappdb">
+  <database-model serializer="dbm" rdbms="DERBY" format-version="4.9">
+    <root id="1">
+      <ServerVersion>10.11</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="APP">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="NULLID"/>
+    <schema id="4" parent="1" name="SQLJ"/>
+    <schema id="5" parent="1" name="SYS"/>
+    <schema id="6" parent="1" name="SYSCAT"/>
+    <schema id="7" parent="1" name="SYSCS_DIAG"/>
+    <schema id="8" parent="1" name="SYSCS_UTIL"/>
+    <schema id="9" parent="1" name="SYSFUN"/>
+    <schema id="10" parent="1" name="SYSIBM"/>
+    <schema id="11" parent="1" name="SYSPROC"/>
+    <schema id="12" parent="1" name="SYSSTAT"/>
+    <table id="13" parent="2" name="ACCOUNTS"/>
+    <column id="14" parent="13" name="ACCOUNTID">
+      <Position>1</Position>
+      <DataType>INTEGER|4s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DefaultExpression>AUTOINCREMENT: start 1 increment 1</DefaultExpression>
+    </column>
+    <column id="15" parent="13" name="ACCOUNTNO">
+      <Position>2</Position>
+      <DataType>VARCHAR(11)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="16" parent="13" name="ACCOUNTNAME">
+      <Position>3</Position>
+      <DataType>VARCHAR(48)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="17" parent="13" name="SQL180606141022970">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ACCOUNTID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="18" parent="13" name="SQL180606141022970">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ACCOUNTID</ColNames>
+    </key>
+  </database-model>
+</dataSource>
